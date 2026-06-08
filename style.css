@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #111;
+    color: white;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.post-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, textarea {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+}
+
+button {
+    padding: 10px;
+    background: limegreen;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.post {
+    background: #222;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
