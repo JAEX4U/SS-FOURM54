@@ -4,7 +4,7 @@
 // =========================
 
 // IMPORTANT: Change this to your real admin email.
-const ADMIN_EMAIL = "your@email.com";
+const ADMIN_EMAIL = "joydeephembram89@gmail.com";
 
 // =========================
 // HELPERS
