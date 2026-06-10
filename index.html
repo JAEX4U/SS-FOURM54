@@ -1,21 +1,132 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Sus Forum</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SPIN VAR PLANT</title>
+
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <h1>🕵️ Sus Forum</h1>
+<div class="website">
 
-    <div class="post-box">
-        <input type="text" id="username" placeholder="Username">
-        <textarea id="message" placeholder="Write something suspicious..."></textarea>
-        <button onclick="addPost()">Post</button>
+    <!-- HEADER -->
+    <div class="header">
+
+        <div class="header-left">
+
+            <div class="logo-box">
+                SPIN VAR PLANT
+            </div>
+
+            <div class="h-text">
+                H
+            </div>
+
+            <div class="nav">
+
+                <a href="index.html">
+                    HOME
+                </a>
+
+                <a href="market.html">
+                    MARKETPLACE
+                </a>
+
+                <a href="forum.html">
+                    FORUM
+                </a>
+
+                <a href="news.html">
+                    NEWS
+                </a>
+
+                <div class="dropdown">
+                    <a href="crew.html">CREW</a>
+                    <div class="dropdown-content">
+                        <a href="all-members.html">All Members</a>
+                        <a href="online-members.html">Online Members</a>
+                        <a href="top-threads.html">Top Threads</a>
+                        <a href="top-sellers.html">Top Sellers</a>
+                        <a href="staff.html">Staff Team</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="header-right">
+
+            <div class="p-text">
+                P
+            </div>
+
+            <button class="number-box">
+                1
+            </button>
+
+        </div>
+
     </div>
 
-    <div id="posts"></div>
+    <!-- MAIN CONTENT -->
+    <div class="content">
 
-    <script src="script.js"></script>
+        <h1>
+            HOME
+        </h1>
+
+        <p>
+            Welcome to Spin Var Plant.
+        </p>
+
+        <div class="home-cards">
+
+            <div class="card">
+                <h3>MARKETPLACE</h3>
+                <p>
+                    Browse products and plant resources.
+                </p>
+
+                <a href="market.html" class="card-btn">
+                    OPEN
+                </a>
+            </div>
+
+            <div class="card">
+                <h3>FORUM</h3>
+                <p>
+                    View community discussions and updates.
+                </p>
+
+                <a href="forum.html" class="card-btn">
+                    OPEN
+                </a>
+            </div>
+
+            <div class="card">
+                <h3>CREATE THREAD</h3>
+                <p>
+                    Create a new discussion for the community.
+                </p>
+
+                <a href="post.html" class="card-btn">
+                    OPEN
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script type="module" src="firebase.js"></script>
+<script src="script.js"></script>
+
 </body>
 </html>
