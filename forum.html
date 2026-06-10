@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum - SPIN VAR PLANT</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="website">
+
+    <div class="header">
+        <div class="header-left">
+            <div class="logo-box">SPIN VAR PLANT</div>
+            <div class="h-text">H</div>
+            <div class="nav">
+                <a href="index.html">HOME</a>
+                <a href="market.html">MARKETPLACE</a>
+                <a href="forum.html">FORUM</a>
+                <a href="news.html">NEWS</a>
+
+                <div class="dropdown">
+                    <a href="crew.html">CREW</a>
+                    <div class="dropdown-content">
+                        <a href="all-members.html">All Members</a>
+                        <a href="online-members.html">Online Members</a>
+                        <a href="top-threads.html">Top Threads</a>
+                        <a href="top-sellers.html">Top Sellers</a>
+                        <a href="staff.html">Staff Team</a>
+                    </div>
+                </div>
+
+                <a href="admin.html" id="adminLink" style="display:none;">ADMIN</a>
+                <a href="login.html">SIGN IN</a>
+            </div>
+        </div>
+
+        <div class="header-right">
+            <div class="p-text">P</div>
+            <button class="number-box">1</button>
+        </div>
+    </div>
+
+    <div class="content">
+
+        <div class="page-header">
+            <h1>FORUM</h1>
+            <a href="post.html" class="card-btn">+ CREATE THREAD</a>
+        </div>
+
+        <h2>Latest Threads</h2>
+
+        <div id="threads"></div>
+
+    </div>
+
+</div>
+
+<script type="module" src="firebase.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
