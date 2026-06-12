@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home - SPIN VAR PLANT</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="website">
+
+<div class="header">
+  <div class="header-left">
+    <div class="logo-box">SPIN VAR PLANT</div>
+    <div class="h-text">H</div>
+    <div class="nav">
+      <a href="index.html">HOME</a>
+      <a href="forum.html">FORUM</a>
+      <a href="market.html">MARKETPLACE</a>
+      <a href="news.html">NEWS</a>
+      <a href="profile.html">PROFILE</a>
+      <div class="dropdown">
+        <a href="crew.html">CREW</a>
+        <div class="dropdown-content">
+          <a href="all-members.html">All Members</a>
+          <a href="online-members.html">Online Members</a>
+          <a href="top-threads.html">Top Threads</a>
+          <a href="top-sellers.html">Top Sellers</a>
+          <a href="staff.html">Staff Team</a>
+        </div>
+      </div>
+      <a href="login.html">SIGN IN</a>
+      <a href="admin.html" id="adminLink" style="display:none;">ADMIN</a>
+    </div>
+  </div>
+  <div class="header-right">
+    <div class="mini-profile">
+      <div class="mini-left">
+        <a href="profile.html" class="mini-avatar" id="userInitial">?</a>
+        <div class="mini-name-row"><span>Name</span> <b id="userName">GUEST</b></div>
+        <div class="mini-status-row"><span>STATUS</span> <b id="userRole">MEMBER</b></div>
+      </div>
+      <div class="mini-right">
+        <div class="mini-icons">
+          <a href="profile.html">✉</a><a href="profile.html">⚠</a><a href="post.html">✚</a><a href="profile.html">⚙</a>
+        </div>
+        <div class="mini-badge-title">OWNED BADGE</div>
+        <div class="badge-grid"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+        <div class="mini-stat">TRUST - 20.05%</div>
+        <div class="mini-stat">BALANCE - 14.09 $</div>
+      </div>
+    </div>
+    <button class="number-box">1</button>
+  </div>
+</div>
+
+<div class="content">
+
+<h1>HOME DASHBOARD</h1>
+
+<section class="dashboard-section">
+  <h2>LATEST FORUM THREADS</h2>
+  <div id="homeThreads" class="home-list"></div>
+  <a href="forum.html" class="view-link">View all threads →</a>
+</section>
+
+<section class="dashboard-section">
+  <h2>LATEST MARKETPLACE ITEMS</h2>
+  <div id="homeMarketItems" class="home-market-grid"></div>
+  <a href="market.html" class="view-link">View all items →</a>
+</section>
+
+<section class="dashboard-section">
+  <h2>LATEST NEWS</h2>
+  <div id="homeNews" class="home-list"></div>
+  <a href="news.html" class="view-link">View all news →</a>
+</section>
+
+</div>
+</div>
+<script type="module" src="firebase.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

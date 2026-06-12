@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Forum - SPIN VAR PLANT</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="website">
+
+<div class="header">
+  <div class="header-left">
+    <div class="logo-box">SPIN VAR PLANT</div>
+    <div class="h-text">H</div>
+    <div class="nav">
+      <a href="index.html">HOME</a>
+      <a href="forum.html">FORUM</a>
+      <a href="market.html">MARKETPLACE</a>
+      <a href="news.html">NEWS</a>
+      <a href="profile.html">PROFILE</a>
+      <div class="dropdown">
+        <a href="crew.html">CREW</a>
+        <div class="dropdown-content">
+          <a href="all-members.html">All Members</a>
+          <a href="online-members.html">Online Members</a>
+          <a href="top-threads.html">Top Threads</a>
+          <a href="top-sellers.html">Top Sellers</a>
+          <a href="staff.html">Staff Team</a>
+        </div>
+      </div>
+      <a href="login.html">SIGN IN</a>
+      <a href="admin.html" id="adminLink" style="display:none;">ADMIN</a>
+    </div>
+  </div>
+  <div class="header-right">
+    <div class="mini-profile">
+      <div class="mini-left">
+        <a href="profile.html" class="mini-avatar" id="userInitial">?</a>
+        <div class="mini-name-row"><span>Name</span> <b id="userName">GUEST</b></div>
+        <div class="mini-status-row"><span>STATUS</span> <b id="userRole">MEMBER</b></div>
+      </div>
+      <div class="mini-right">
+        <div class="mini-icons">
+          <a href="profile.html">✉</a><a href="profile.html">⚠</a><a href="post.html">✚</a><a href="profile.html">⚙</a>
+        </div>
+        <div class="mini-badge-title">OWNED BADGE</div>
+        <div class="badge-grid"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+        <div class="mini-stat">TRUST - 20.05%</div>
+        <div class="mini-stat">BALANCE - 14.09 $</div>
+      </div>
+    </div>
+    <button class="number-box">1</button>
+  </div>
+</div>
+
+<div class="content">
+
+<div class="page-header">
+  <h1>FORUM</h1>
+  <a href="post.html" class="card-btn">+ CREATE THREAD</a>
+</div>
+<div class="filter-row">
+  <input type="text" id="threadSearch" placeholder="Search threads..." oninput="filterThreads()">
+  <select id="threadCategoryFilter" onchange="filterThreads()">
+    <option value="">All Categories</option>
+    <option value="General">General</option>
+    <option value="Marketplace Help">Marketplace Help</option>
+    <option value="Plant Updates">Plant Updates</option>
+    <option value="Questions">Questions</option>
+  </select>
+</div>
+<h2>Latest Threads</h2>
+<div id="threads"></div>
+
+</div>
+</div>
+<script type="module" src="firebase.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
