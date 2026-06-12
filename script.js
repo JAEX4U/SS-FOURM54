@@ -1,4 +1,4 @@
-const ADMIN_EMAILS = ["your@email.com"];
+const ADMIN_EMAILS = ["joydeephembram89@gmail.com"];
 let allThreadsCache = [];
 
 function waitForFirebase(cb){
