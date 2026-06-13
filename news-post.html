@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Create News - SPIN VAR PLANT</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="website">
+
+<div class="header">
+  <div class="header-left">
+    <div class="logo-box">SPIN VAR PLANT</div>
+    <div class="h-text">H</div>
+
+    <div class="nav">
+      <a href="index.html">HOME</a>
+      <a href="forum.html">FORUM</a>
+      <a href="market.html">MARKETPLACE</a>
+      <a href="news.html">NEWS</a>
+      <a href="profile.html">PROFILE</a>
+
+      <div class="dropdown">
+        <a href="crew.html">CREW</a>
+        <div class="dropdown-content">
+          <a href="all-members.html">All Members</a>
+          <a href="online-members.html">Online Members</a>
+          <a href="top-threads.html">Top Threads</a>
+          <a href="top-sellers.html">Top Sellers</a>
+          <a href="staff.html">Staff Team</a>
+        </div>
+      </div>
+
+      <a href="login.html">SIGN IN</a>
+      <a href="admin.html" id="adminLink" style="display:none;">ADMIN</a>
+    </div>
+  </div>
+
+  <div class="header-right">
+    <div class="mini-profile">
+
+      <div class="mini-left">
+        <a href="profile.html" class="mini-avatar">
+          <img id="miniAvatarImg" src="" alt="">
+          <span id="userInitial">?</span>
+        </a>
+
+        <div class="mini-name-row">
+          <span>Name</span>
+          <b id="userName">GUEST</b>
+        </div>
+
+        <div class="mini-status-row">
+          <span>STATUS</span>
+          <b id="userPrimaryStatus">NEWBIE</b>
+        </div>
+      </div>
+
+      <div class="mini-right">
+
+        <div class="mini-icons">
+          <div class="mini-icon-wrap">
+            <button class="mini-icon-btn" onclick="toggleMiniDropdown('mailDropdown')">
+              ✉ <span id="mailCount">0</span>
+            </button>
+
+            <div class="mini-dropdown" id="mailDropdown">
+              <div class="drop-title">
+                <span>MAIL</span>
+                <a href="mail.html">OPEN PAGE</a>
+              </div>
+              <div id="miniMailList"></div>
+            </div>
+          </div>
+
+          <div class="mini-icon-wrap">
+            <button class="mini-icon-btn" onclick="toggleMiniDropdown('alertDropdown')">
+              ⚠ <span id="alertCount">0</span>
+            </button>
+
+            <div class="mini-dropdown" id="alertDropdown">
+              <div class="drop-title">
+                <span>ALERTS</span>
+                <a href="alerts.html">OPEN PAGE</a>
+              </div>
+              <div id="miniAlertList"></div>
+            </div>
+          </div>
+
+          <a href="status-store.html" class="mini-icon-btn">✚</a>
+          <a href="profile.html" class="mini-icon-btn">⚙</a>
+        </div>
+
+        <div class="mini-status-title">STATUS</div>
+        <div id="miniStatusList" class="mini-status-list">
+          <span class="status-pill status-newbie">NEWBIE</span>
+        </div>
+
+        <div class="mini-stat">TRUST - <span id="miniTrust">10%</span></div>
+        <div class="mini-stat">BALANCE - $<span id="miniBalance">0.00</span></div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="content">
+
+<h1>CREATE NEWS</h1>
+
+<p>Publish a new announcement.</p>
+
+<input type="text" id="newsTitle" placeholder="News Title">
+<input type="file" id="newsImageFile" accept="image/*">
+
+<textarea id="newsContent" rows="10" placeholder="Write your news here..."></textarea>
+
+<button onclick="createNews()">PUBLISH NEWS</button>
+
+<br><br>
+<a href="news.html" class="card-btn">BACK TO NEWS</a>
+
+</div>
+</div>
+<script type="module" src="firebase.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
