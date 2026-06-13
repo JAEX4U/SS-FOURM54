@@ -146,3 +146,52 @@ async function deleteNews(id){if(!isAdminUser()){alert("Admin only.");return;} i
 
 Object.assign(window,{signupUser,loginUser,logoutUser,toggleMiniDropdown,createThread,likeThread,pinThread,replyThread,filterThreads,createListing,createNews,uploadAvatar,updateUsername,buyStatus,adminAddBalance,adminAddTrust,adminGrantStatus,deleteThread,deleteListing,deleteNews});
 waitForFirebase(function(){window.onAuthStateChanged(window.auth,async function(){await ensureUserProfile(); updateAdminUI(); loadHeaderUser(); protectAdminPage(); loadNotifications(); loadMessageView(); loadHomeDashboard(); loadThreads(); loadThreadView(); loadMarketplace(); loadItemView(); loadNews(); loadNewsView(); loadProfile();});});
+
+
+/* NEW NAV SCROLL SYSTEM */
+const navScroll = document.getElementById("navScroll");
+const leftBtn = document.getElementById("navLeft");
+const rightBtn = document.getElementById("navRight");
+
+if(navScroll){
+
+    function updateNavButtons(){
+
+        if(navScroll.scrollLeft <= 0){
+            leftBtn.classList.add("hidden");
+        }else{
+            leftBtn.classList.remove("hidden");
+        }
+
+        if(
+            navScroll.scrollLeft + navScroll.clientWidth >=
+            navScroll.scrollWidth - 5
+        ){
+            rightBtn.classList.add("hidden");
+        }else{
+            rightBtn.classList.remove("hidden");
+        }
+    }
+
+    rightBtn.onclick = () => {
+
+        navScroll.scrollBy({
+            left:200,
+            behavior:"smooth"
+        });
+
+        setTimeout(updateNavButtons,300);
+    };
+
+    leftBtn.onclick = () => {
+
+        navScroll.scrollBy({
+            left:-200,
+            behavior:"smooth"
+        });
+
+        setTimeout(updateNavButtons,300);
+    };
+
+    updateNavButtons();
+}
