@@ -1,5 +1,5 @@
 
-const ADMIN_EMAILS = ["your@email.com"];
+const ADMIN_EMAILS = ["joydeephembram89@gmail.com"];
 let allThreadsCache = [];
 
 const IMGBB_API_KEY = "567ae01bf7e52acd2cdfed8188638021";
